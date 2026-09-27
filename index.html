@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solar Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND STARS -->
+    <div class="stars"></div>
+    <div class="stars stars2"></div>
+    <div class="stars stars3"></div>
+    <div class="meteor meteor-1"></div>
+    <div class="meteor meteor-2"></div>
+    <div class="meteor meteor-3"></div>
+
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <span>SOLAR</span>
+            <strong>EXPLORER</strong>
+        </div>
+
+        <div class="header-right">
+            <span>IN ONLY CSS</span>
+
+            <div class="menu">
+                ☰
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- PLANET NAVIGATION -->
+    <aside class="planet-nav">
+
+    <button class="planet-item" data-planet="Pluto">
+        <span class="planet-dot pluto"></span>
+        Pluto
+    </button>
+
+    <button class="planet-item" data-planet="Neptune">
+        <span class="planet-dot neptune"></span>
+        Neptune
+    </button>
+
+    <button class="planet-item" data-planet="Uranus">
+        <span class="planet-dot uranus"></span>
+        Uranus
+    </button>
+
+    <button class="planet-item" data-planet="Saturn">
+        <span class="planet-dot saturn"></span>
+        Saturn
+    </button>
+
+    <button class="planet-item" data-planet="Jupiter">
+        <span class="planet-dot jupiter"></span>
+        Jupiter
+    </button>
+
+    <button class="planet-item" data-planet="Mars">
+        <span class="planet-dot mars"></span>
+        Mars
+    </button>
+
+    <button class="planet-item" data-planet="Earth">
+        <span class="planet-dot earth"></span>
+        Earth
+    </button>
+
+    <button class="planet-item" data-planet="Venus">
+        <span class="planet-dot venus"></span>
+        Venus
+    </button>
+
+    <button class="planet-item active" data-planet="Mercury">
+        <span class="planet-dot mercury"></span>
+        Mercury
+    </button>
+
+    <button class="planet-item" data-planet="SemuaPlanet">
+        <span class="planet-dot semua"></span>
+        Semua Planet
+    </button>
+
+</aside>
+    <!-- MAIN -->
+    <main>
+
+        <div class="all-planets-scene" aria-hidden="true">
+            <div class="sun-system">
+                <div class="sun-core"></div>
+                <div class="orbit orbit-1"><span class="planet-mini planet-mercury"></span></div>
+                <div class="orbit orbit-2"><span class="planet-mini planet-venus"></span></div>
+                <div class="orbit orbit-3"><span class="planet-mini planet-earth"></span></div>
+                <div class="orbit orbit-4"><span class="planet-mini planet-mars"></span></div>
+                <div class="orbit orbit-5"><span class="planet-mini planet-jupiter"></span></div>
+                <div class="orbit orbit-6"><span class="planet-mini planet-saturn"></span></div>
+                <div class="orbit orbit-7"><span class="planet-mini planet-uranus"></span></div>
+                <div class="orbit orbit-8"><span class="planet-mini planet-neptune"></span></div>
+            </div>
+        </div>
+
+        <div class="planet-area">
+
+            <div class="planet-scene">
+                <div class="orbit-ring orbit-ring-1"></div>
+                <div class="orbit-ring orbit-ring-2"></div>
+
+                <div class="planet">
+                    <div class="planet-light"></div>
+                    <img
+                        src="images/Mercury.jpg"
+                        alt="Mercury"
+                        id="planetImage"
+                    >
+                </div>
+            </div>
+
+
+            <section class="content">
+
+                <div class="small-title">
+                    PLANET
+                </div>
+
+                <h1 id="planetName">
+                    MERCURY
+                </h1>
+
+                <p id="planetDescription">
+                    The smallest planet in our solar system
+                    and the closest planet to the Sun.
+                    A world of extreme temperatures,
+                    craters and mysterious landscapes.
+                </p>
+
+                <button class="read-more" aria-label="DAFID~AL FATIH~23~">
+                    DAFID~AL FATIH~23~
+                    <span>↗</span>
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- BOTTOM -->
+    <div class="bottom-line">
+
+        <span id="currentNumber">09</span>
+
+        <div class="line"></div>
+
+        <span>09</span>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
